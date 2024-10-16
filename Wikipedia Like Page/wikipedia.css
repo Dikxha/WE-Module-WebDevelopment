@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h2 {
+    font-family: 'Georgia', serif;
+}
+
+.toc {
+    border: 1px solid #ccc;
+    padding: 10px;
+    padding-top: 0px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    width: 300px;
+}
+
+.toc table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.toc table td {
+    padding: 2px;
+}
+
+.collapsible {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.collapsible:hover {
+    background-color: #ddd;
+}
+
+.content {
+    display: none;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.content p {
+    margin: 0;
+}
+
+.collapsible.active {
+    background-color: #ccc;
+}
+
+.collapsible.active + .content {
+    display: block;
+}
+
+.collapsible:after {
+    content: '\002B';
+    float: right;
+}
+
+.collapsible.active:after {
+    content: '\2212';
+}
